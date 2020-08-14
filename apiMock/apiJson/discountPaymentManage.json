@@ -1,0 +1,421 @@
+[
+    {
+        "path":"/discount/pay/saveBaseInfo.json",
+        "describe":"优惠买单基本信息保存",
+        "method":"post",
+        "result":{
+            "success":"",
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{
+                "applyId": 10
+            }
+        }
+    },
+    {
+        "path":"/discount/pay/updateBaseInfo.json",
+        "describe":"优惠买单基本信息修改",
+        "method":"post",
+        "result":{
+            "success":"",
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{
+                "applyId": 10
+            }
+        }
+    },
+    {
+        "path":"/shopApply/shopInfoByCondition.json",
+        "describe":"根据区域分类查询门店列表/按门店名称或编号搜索 ",
+        "method":"post",
+        "result":{
+            "success":"",
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":[
+                {
+                    "shopId":"000001",                                  
+                    "merchantId":"000002",                              
+                    "shopName":"麦当劳",                               
+                    "shopStatus":"NORMAL",                             
+                    "createTime":"2019-12-15 12:00:00"      
+                },
+                {
+                    "shopId":"000002",                                  
+                    "merchantId":"000003",                              
+                    "shopName":"肯德基",                               
+                    "shopStatus":"NORMAL",                             
+                    "createTime":"2019-12-06 12:00:00"      
+                } 
+            ]
+        }
+    },
+    {
+        "path":"/discount/pay/detail.json",
+        "describe":"优惠买单详情查询",
+        "method":"get",
+        "result":{
+            "success":"",
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{
+                "applyId": 10,								
+                "discountsPayId": "10",						
+                "importShopStyle": "CHECK",					
+                "shopFilePath": null,						
+                "shopList": [  								
+                    {
+                        "id": 17,
+                        "shopId": "001",
+                        "shopName": "肯德基"
+                    },
+                    {
+                        "id": 18,
+                        "shopId": "002",
+                        "shopName": "麦当劳"
+                    }
+                ],
+                "timeConfList": [ 
+                    {
+                        "id": 1,	
+                        "applyId": 10,
+                        "timeType": "DISPLAY",					
+                        "startTimeType": null,					
+                        "setAppointTime": null,					
+                        "startTime": "2019-12-03 10:57:52",		
+                        "endTime": "2020-01-01 10:57:56",		
+                        "setCycle": null,						
+                        "cycleType": "",						
+                        "cycleContent": "",						
+                        "cycleStartTime": null,					
+                        "cycleEndTime": null					
+                    },
+                    {
+                        "id": 2,
+                        "applyId": 10,
+                        "timeType": "USE",
+                        "startTimeType": null,
+                        "setAppointTime": "true",
+                        "startTime": "2019-12-03 10:58:59",
+                        "endTime": "2020-01-01 10:59:06",
+                        "setCycle": true,
+                        "cycleType": "WEEK",
+                        "cycleContent": "1110000",
+                        "cycleStartTime": "11:00:00",
+                        "cycleEndTime": "11:59:59"
+                    },
+                    {
+                        "id": 3,
+                        "applyId": 10,
+                        "timeType": "VALID",
+                        "startTimeType": null,
+                        "setAppointTime": null,
+                        "startTime": "2019-12-03 10:58:28",
+                        "endTime": "2020-01-01 10:58:31",
+                        "setCycle": null,
+                        "cycleType": "",
+                        "cycleContent": "",
+                        "cycleStartTime": null,
+                        "cycleEndTime": null
+                    }
+                ],
+                "discountsPayName": "优惠买单名称",					
+                "discountsPayState": "INVALID",						
+                "setLimitNum": true,								
+                "maxDiscountsNum": 5,								
+                "payWay": "CREDIT",									
+                "discountsRule": "LADDER",							
+                "discountsReduceValue": "599:100|2222:122|3333:333",					
+                "totalInventory": 100,								
+                "setInventoryLimit": true,							
+                "setLimitAmt": null,								
+                "maxDiscountsAmt": null,							
+                "settleWay": null,									
+                "subsidySettleWay": "AFTER",						
+                "bankSubsidyAmt": 3.00,								
+                "branchSubsidyAmt":"1.00",							
+                "mchtSubsidyAmt": 2.00,								
+                "actBudgetId": "",									
+                "auditStatus":"EDIT",								
+                "createTime":"2019-01-01 12:00:00",                 
+                "updateTime":"2019-01-01 12:00:00"                  
+            }
+        }
+    },
+    {
+        "path":"/discount/pay/importModel.json",
+        "describe":"优惠买单模板详情查询",
+        "method":"get",
+        "result":{
+            "success":"",
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{
+                "applyId": 10,								
+                "discountsPayId": "10",						
+                "importShopStyle": "CHECK",					
+                "shopFilePath": null,						
+                "shopList": [  								
+                    {
+                        "id": 17,
+                        "shopId": "001",
+                        "shopName": "肯德基"
+                    },
+                    {
+                        "id": 18,
+                        "shopId": "002",
+                        "shopName": "麦当劳"
+                    }
+                ],
+                "timeConfList": [ 
+                    {
+                        "id": 1,	
+                        "applyId": 10,
+                        "timeType": "DISPLAY",					
+                        "startTimeType": null,					
+                        "setAppointTime": null,					
+                        "startTime": "2019-12-03 10:57:52",		
+                        "endTime": "2020-01-01 10:57:56",		
+                        "setCycle": null,						
+                        "cycleType": "",						
+                        "cycleContent": "",						
+                        "cycleStartTime": null,					
+                        "cycleEndTime": null					
+                    },
+                    {
+                        "id": 2,
+                        "applyId": 10,
+                        "timeType": "USE",
+                        "startTimeType": null,
+                        "setAppointTime": "true",
+                        "startTime": "2019-12-03 10:58:59",
+                        "endTime": "2020-01-01 10:59:06",
+                        "setCycle": true,
+                        "cycleType": "WEEK",
+                        "cycleContent": "1110000",
+                        "cycleStartTime": "11:00:00",
+                        "cycleEndTime": "11:59:59"
+                    },
+                    {
+                        "id": 3,
+                        "applyId": 10,
+                        "timeType": "VALID",
+                        "startTimeType": null,
+                        "setAppointTime": null,
+                        "startTime": "2019-12-03 10:58:28",
+                        "endTime": "2020-01-01 10:58:31",
+                        "setCycle": null,
+                        "cycleType": "",
+                        "cycleContent": "",
+                        "cycleStartTime": null,
+                        "cycleEndTime": null
+                    }
+                ],
+                "discountsPayName": "优惠买单名称",					
+                "discountsPayState": "INVALID",						
+                "setLimitNum": true,								
+                "maxDiscountsNum": 5,								
+                "payWay": "CREDIT",									
+                "discountsRule": "LADDER",							
+                "discountsReduceValue": "599:100|2222:122|3333:333",					
+                "totalInventory": 100,								
+                "setInventoryLimit": true,							
+                "setLimitAmt": null,								
+                "maxDiscountsAmt": null,							
+                "settleWay": null,									
+                "subsidySettleWay": "AFTER",						
+                "bankSubsidyAmt": 3.00,								
+                "branchSubsidyAmt":"1.00",							
+                "mchtSubsidyAmt": 2.00,								
+                "actBudgetId": "",									
+                "auditStatus":"EDIT",								
+                "createTime":"2019-01-01 12:00:00",                 
+                "updateTime":"2019-01-01 12:00:00"                  
+            }
+        }
+    },
+    {
+        "path":"/discount/pay/saveRule.json",
+        "describe":"优惠买单规则保存或修改",
+        "method":"post",
+        "result":{
+            "success":"",
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{"applyId":10}
+        }
+    },
+    {
+        "path":"/discount/pay/submitAudit.json",
+        "describe":"优惠买单提交审核",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{}
+        }
+    },
+    {
+        "path":"/discount/pay/list.json",
+        "describe":"优惠买单列表查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{
+                "pageSize":10,          
+                "pageNum":1,            
+                "rowTotal":100,         
+                "offset":0,             
+                "pageCount":10,         
+                "listRows":[{
+                    "discountPayName":"",                               
+                    "discountsPayId":"1",                               
+                    "shopName":"test",                                  
+                    "multipleShop":true,                                
+                    "discountsPayState":"0",                            
+                    "displayStatus":"",									
+                    "auditStatus":"EDIT",								
+                    "used":"",											
+                    "totalStock":-1,                                    
+                    "createTime":"2019/01/01 10:00am",                 	
+                    "validEndTime":"2019/01/01 10:00am"               	
+                }]
+            }
+        }
+    },
+    {
+        "path":"/discount/pay/addAuditList.json",
+        "describe":"优惠买单新增审核列表查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{
+                "pageSize":10,          
+                "pageNum":1,            
+                "rowTotal":100,         
+                "offset":0,             
+                "pageCount":10,         
+                "listRows":[{
+                    "auditJnlNo":"",									
+                    "discountPayName":"",                               
+                    "discountsPayId":"1",                               
+                    "shopName":"test",                                  
+                    "multipleShop":true,                                
+                    "firstAuditPersonId":"111111",						
+                    "finalAuditPersonId":"222222",						
+                    "auditStatus":"EDIT",								
+                    "createStartDate":""                     			
+                }]
+            }
+        }
+    },
+    {
+        "path":"/discount/pay/addAuditDetail.json",
+        "describe":"优惠买单新增审核详情查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "resultMsg":"",
+            "discountsPayId": null,	
+            "importShopStyle": "CHECK",	
+            "shopFilePath": null,
+            "data":{
+                "applyId": 10,								
+                "discountsPayId": null,						
+                "shopList": [  								
+                    {
+                        "id": 17,
+                        "shopId": "001",
+                        "shopName": "肯德基"
+                    },
+                    {
+                        "id": 18,
+                        "shopId": "002",
+                        "shopName": "麦当劳"
+                    }
+                ],
+                "timeConfList": [ 
+                    {
+                        "id": 1,	
+                        "applyId": 10,
+                        "timeType": "DISPLAY",					
+                        "startTimeType": null,					
+                        "setAppointTime": null,					
+                        "startTime": "2019-12-03 10:57:52",		
+                        "endTime": "2020-01-01 10:57:56",		
+                        "setCycle": null,						
+                        "cycleType": "",						
+                        "cycleContent": "",						
+                        "cycleStartTime": null,					
+                        "cycleEndTime": null					
+                    },
+                    {
+                        "id": 2,
+                        "applyId": 10,
+                        "timeType": "USE",
+                        "startTimeType": null,
+                        "setAppointTime": "true",
+                        "startTime": "2019-12-03 10:58:59",
+                        "endTime": "2020-01-01 10:59:06",
+                        "setCycle": true,
+                        "cycleType": "WEEK",
+                        "cycleContent": "1110000",
+                        "cycleStartTime": "11:00:00",
+                        "cycleEndTime": "11:59:59"
+                    },
+                    {
+                        "id": 3,
+                        "applyId": 10,
+                        "timeType": "VALID",
+                        "startTimeType": null,
+                        "setAppointTime": null,
+                        "startTime": "2019-12-03 10:58:28",
+                        "endTime": "2020-01-01 10:58:31",
+                        "setCycle": null,
+                        "cycleType": "",
+                        "cycleContent": "",
+                        "cycleStartTime": null,
+                        "cycleEndTime": null
+                    }
+                ],
+                "discountsPayName": "优惠买单名称",					
+                "setLimitNum": true,								
+                "maxDiscountsNum": 5,								
+                "payWay": "CREDIT",									
+                "discountsRule": "LADDER",							
+                "discountsReduceValue": "599:100|1000:233|2333:344",					
+                "totalInventory": 100,								
+                "setInventoryLimit": true,							
+                "setLimitAmt": null,								
+                "maxDiscountsAmt": null,							
+                "settleWay": null,									
+                "subsidySettleWay": "AFTER",						
+                "apportionRuleValue":"5:4:3|3:2:1",					
+                "auditStatus":"EDIT",								
+                "auditJounalList":[									
+                    {"auditPersonId":"",							
+                    "auditPersonName":"",							
+                    "auditType":"",									
+                    "auditResult":"",								
+                    "auditOpinion":"",								
+                    "auditTime":""									
+                    },
+                    {"auditPersonId":"",
+                    "auditPersonName":"",
+                    "auditType":"",
+                    "auditResult":"",
+                    "auditOpinion":"",
+                    "auditTime":""
+                    }
+                ]
+            }
+        }
+    }        
+]

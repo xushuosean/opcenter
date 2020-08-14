@@ -1,0 +1,137 @@
+[
+    {
+        "path":"/grantAuth/submit",
+        "describe": "定向发放授权添加",
+        "method": "post",
+        "result": {
+            "success":true,
+            "resultCode":"000000",  
+            "returnMsg": "",
+            "data":{
+            }
+
+        } 
+    },
+    {
+        "path":"/grantAuth/list",
+        "describe": "定向发放授权列表查询",
+        "method": "post",
+        "result": {
+            "success":true,
+            "resultCode":"000000",  
+            "returnMsg": "",
+            "body":{    
+                "rowTotal":100,     
+            "authList": [
+                {
+                    "id":"22",            
+                    "userId":"43",        
+                    "grantType":"COUPON",     
+                    "grantId":"23432",   
+                    "grantName":"新春大红包", 
+                    "stock":100000,         
+                    "grantStartTime":"2012/2/3",     
+                    "grantEndTime":"2012/2/13",       
+                    "createTime":"2012/1/4"          
+                },
+                {
+                    "id":"222",            
+                    "userId":"423",        
+                    "grantType":"COUPON",     
+                    "grantId":"23432",   
+                    "grantName":"中秋大红包", 
+                    "stock":100000,         
+                    "grantStartTime":"2012/2/3",     
+                    "grantEndTime":"2012/2/13",       
+                    "createTime":"2012/1/4"          
+                },{
+                    "id":"242",            
+                    "userId":"4342",        
+                    "grantType":"COUPON",     
+                    "grantId":"234342",   
+                    "grantName":"端午大红包", 
+                    "stock":100000,         
+                    "grantStartTime":"2012/2/3",     
+                    "grantEndTime":"2012/2/13",       
+                    "createTime":"2012/1/4"          
+                }
+            ]}
+        } 
+    },
+    {
+        "path":"/grantAuth/update",
+        "describe": "定向发放授权修改",
+        "method": "post",
+        "result": {
+            "success":true,
+            "resultCode":"000000",  
+            "returnMsg": "",
+            "data":{
+            }
+
+        } 
+    },
+    {
+        "path":"/coupon/search",
+        "describe": "搜索票券",
+        "method": "get",
+        "result": {
+            "success":true,
+            "resultCode":"000000",  
+            "returnMsg": "",
+            "data":{
+                "body":{
+                    "couponList":[
+                     {
+                      "couponId":"asas",     
+                      "couponName":"sdsdsdds"
+                     },
+                     {
+                        "couponId":"asas",     
+                        "couponName":"地方的地方"
+                       },
+                       {
+                        "couponId":"asas",     
+                        "couponName":"呼风唤雨"
+                       }
+                    ]
+                      }
+            }
+
+        } 
+    },
+    {
+        "path":"/rpk/search",
+        "describe": "搜索红包",
+        "method": "get",
+        "result": {
+            "success":true,
+            "resultCode":"000000",  
+            "returnMsg": "",
+            "data":{
+                "body":{
+                    "rpkList":[
+                     {
+                      "rpkId":"asawes",     
+                      "rpkName":"fdfdfd"
+                     }
+                    ]
+                }
+            }
+        } 
+    },
+    {
+        "path":"/grantAuth/cancel",
+        "describe": "定向发放授权撤销",
+        "method": "post",
+        "result": {
+            "success":true,
+            "resultCode":"000000",  
+            "returnMsg": "",
+            "body":{
+            }
+
+        } 
+    }
+		
+]

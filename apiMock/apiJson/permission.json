@@ -1,0 +1,32 @@
+[
+    {
+		"path":"/rbac/user/listUserPerm",
+		"describe": "用户权限查询",
+		"method": "get",
+		"result": {
+            "success": true,
+            "resultCode": "000000",
+            "resultMsg": "SUCCESS",
+            "data": [
+                "OrientGrantManage",
+                "MerchantManage:MerAdd",
+                "CouponManage",
+                "MerchantManage:MerList",
+                "CouponManage:CpnAdd",
+                "AfterSaleManage",
+                "SystemManage",
+                "RpkManage",
+                "SysIndex",
+                "ClientIndexManage",
+                "MerchantManage:incomingList",
+                "MerchantManage",
+                "DiscountsPayManage",
+                "CustomPolyManage",
+                "ManageRecord",
+                "AuditManage",
+                "MerchantManage:ShopList",
+                "SettleReport"
+            ]
+        }
+    }
+]

@@ -1,0 +1,1025 @@
+[
+	{
+		"path":"/site/region.json",
+		"describe": "站点的地址（省市区）列表查询",
+		"method": "get",
+		"result": {
+            "success":true,
+            "resultCode":"000000",  
+            "returnMsg": "",
+            "data":[
+                    {
+                        "id":"1141123",                      
+                        "name":"安徽省",                     
+                        "code":"300000",                    
+                        "level":1,                           
+                        "children":[{                               
+                            "id":"124123123",                   
+                            "parentId":"1141123",                 
+                            "name":"合肥市",                     
+                            "code":"234465",                     
+                            "level":2,
+                            "children":[{                            
+                                "id":"41241",                    
+                                "name":"肥东",                   
+                                "parentId":"124123123",               
+                                "code":"686534",                  
+                                "level":3
+                            }
+                            ]
+                        }
+                        ]
+                    }
+            ]
+        }
+    },
+    
+	{
+		"path":"/site/querySiteList.json",
+		"describe": "地区(省)子站点查询",
+		"method": "get",
+		"result": {
+            "success":true,
+            "resultCode":"000000",  
+            "returnMsg": "",
+            "data":{
+                        "pageSize":10,
+                        "pageNum":1,            
+                        "rowTotal":100,         
+                        "offset":0,             
+                        "pageCount":10,         
+                        "levelName":"不存在的省",                     
+                        "siteList":[
+                            {
+                            "cityId":"233",                 
+                            "cityName":"不存在的城市",               
+                            "cityCode":"2344",               
+                            "siteStatus":"OPEN",             
+                            "isHaveSite":true,         
+                            "siteCreateTime":""              
+                            }
+                        ]
+            }
+        }
+    },
+    {
+		"path":"/site/insertSite.json",
+		"describe": "新增站点请求",
+		"method": "post",
+		"result": {
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{                
+            }
+        }
+    },
+    {
+		"path":"/site/querySite.json",
+		"describe": "站点详情查询",
+		"method": "get",
+		"result": {
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{  
+                "cityId":"2341234",
+                "cityName":"合肥",
+                "fullAddrName":"安徽省-合肥市",
+                "cityCode":"234465",
+                "siteStatus":"OPEN",
+                "isHaveSite":"Y",
+                "siteCreateTime":"2019-4-3"              
+            }
+        }
+    },
+    {
+		"path":"/site/updateSite.json",
+		"describe": "站点修改",
+		"method": "post",
+		"result": {
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{              
+            }
+        }
+    },
+    {
+		"path":"/site/deleteSite.json",
+		"describe": "站点删除",
+		"method": "post",
+		"result": {
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{              
+            }
+        }
+    },
+    {
+		"path":"/org/queryOrgTree.json",
+		"describe": "查询机构树",
+		"method": "get",
+		"result": {
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":[
+                {
+                    "orgId":"0001",  
+                    "orgCode":"080",       
+                    "parentId":0,        
+                    "orgName":"总行",         
+                    "orgDetailAddr":"安徽",  
+                    "orgStatus":"1",   
+                    "orgDesc":"sdfsdfsda",   
+                    "longitude":"",    
+                    "latitude":"",      
+                    "level":"1",      
+                    "createTime":"2019",   
+                    "lastUpdateTime":"2019/2/3", 
+                    "children":[
+                        {
+                        "orgId":"23432",
+                        "orgCode":"23433",
+                        "parentId":"23323",
+                        "orgName":"安徽支行",
+                        "orgDetailAddr":"合肥市 大象村",
+                        "orgStatus":"1",
+                        "orgDesc":"fasdsdsfasdf",
+                        "longitude":"",
+                        "latitude":"",
+                        "level":"2",                                         
+                        "createTime":"2019/4/5",
+                        "lastUpdateTime":"2019/5/6",
+                        "children":[{
+                            "orgId":"12321",
+                            "orgCode":"45666",
+                            "parentId":"23432",
+                            "orgName":"河东支行",
+                            "orgDetailAddr":"河东",
+                            "orgStatus":"CLOSE" ,
+                            "orgDesc":"sdsffadss",
+                            "longitude":44,
+                            "latitude":23,
+                            "level":"3",
+                            "createTime":"2019/7/8",
+                            "lastUpdateTime":"2019/8/8"
+                            }
+                        ]}
+                    ]
+                }
+            ]
+        }
+    },
+    {
+		"path":"/org/queryOrgList.json",
+		"describe": "机构列表查询",
+		"method": "get",
+		"result": {
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+                "count":3,
+            "orgList":[
+                {
+                    "orgId":"234321",
+                    "orgCode":"2323",
+                    "parentId":"324132",
+                    "orgName":"河东支行",
+                    "orgDetailAddr":"河东向南三十里",
+                    "orgStatus":"1",
+                    "orgDesc":"河东好钱庄",
+                    "longitude":"23",
+                    "latitude":"44",
+                    "level":3,
+                    "createTime":"2018/3/4",
+                    "lastUpdateTime":"2019-1-1"
+                }
+            ]
+            }
+        }
+    },
+    {
+		"path":"/org/insertOrg.json",
+		"describe": "新增机构",
+		"method": "post",
+		"result": {
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+        }
+    },
+    {"path":"/org/updateOrg.json",
+        "describe":"机构修改",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+        }
+    },
+    {"path":"/org/deleteOrg.json",
+        "describe":"机构删除",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+        }
+    },
+    {"path":"/org/queryChildList.json",
+        "describe":"下属机构查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+                "pageSize":10,
+                "pageNum":1,
+                "rowTotal":10,
+                "offset":0,
+                "pageCount":10,
+                "orgNameStr":"山海关",
+                "listRows" :[{
+                "orgId":"234234",
+                "orgCode":"wer324",
+                "parentId":"23432",
+                "orgName":"dfasfdsa",
+                "orgDetailAddr":"dsfsd",
+                "orgStatus":"OPEN",
+                "orgDesc":"无法描述",
+                "longitude":"",
+                "latitude":"",
+                "level":3,
+                "createTime":"",
+                "lastUpdateTime":"2039/32/34"}
+
+                ]     
+            }
+        }
+    },
+    {
+        "path":"/org/queryLevelList.json",
+        "describe":"等级内机构列表查询",
+        "method":"get",
+        "result":{
+            
+                "success":true,
+                "resultCode":"",
+                "resultMsg":"",
+                "data":{
+                    "pageSize":10, 
+                    "pageNum":1,   
+                    "rowTotal":100,
+                    "offset":0,    
+                    "pageCount":10,
+                    "listRows":[
+                        {
+                            "orgId":"",
+                            "orgCode":"",
+                            "parentId":"xxx",
+                            "orgName":"",
+                            "orgDetailAddr":"",
+                            "orgStatus":"",
+                            "orgDesc":"",
+                            "longitude":"",
+                            "latitude":"",
+                            "level":"",
+                            "createTime":"",
+                            "lastUpdateTime":""
+                        }
+                    ]
+                }
+            }
+    },
+
+
+
+    {"path":"/systemMan/user/queryUserList",
+        "describe":"账户列表查询",
+        "method":"post",
+        "result":
+        {
+            "success":"",
+            "resultCode":"",
+            "resultMsg":"",
+            "data":{
+                "pageSize":10,          
+                "pageNum":1,            
+                "rowTotal":100,         
+                "offset":0,             
+                "pageCount":10,         
+                "listRows":[
+                    {
+                        "userId":"234",
+                        "userName":"王铁柱",
+                        "loginId":"adminfffff",
+                        "password":"sdsds",
+                        "roleId":"23233",
+                        "phoneNo":"12221111222",
+                        "userStatus":"",
+                        "createTime":"2019-02-02",
+                        "lastUpdateTime":"2019-02-02",
+                        "orgId":"232332",                
+                        "belongTree":"" ,            
+                        "roles":[{
+                            "roleId":"",            
+                            "roleCode":"",          
+                            "roleName":"",          
+                            "roleDesc":"",          
+                            "createTime":"",        
+                            "createPerson":"",      
+                            "lastUpdateTime":"",    
+                            "lastUpdatePerson":""   
+                        }]
+                    }
+                ]
+            }
+        }
+    },
+
+
+    {
+        "path":"/systemMan/role/queryPermissionTree.json",
+        "describe":"权限树查询",
+        "method":"get",
+        "result":{
+            "success":"",
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":[
+                {
+                    "permissionId":"989",                         
+                    "parentId":"898",                      
+                    "treePath":"7878",                      
+                    "permCode":"ffggr",                       
+                    "appId":"788",                         
+                    "permName":"目视",                          
+                    "status":"on",                        
+                    "children":[                        
+                        {
+                            "permissionId":"244",
+                            "parentId":"989",
+                            "treePath":"effds",
+                            "permCode":"sdfsd",
+                            "appId":"dsfsd",
+                            "permName":"视觉",
+                            "status":"on",
+                            "children":[{
+                                "permissionId":"254",
+                                "parentId":"244",
+                                "treePath":"egs",
+                                "permCode":"sdfsd",
+                                "appId":"dkkksd",
+                                "permName":"看",
+                                "status":"on"},
+                                {
+                                    "permissionId":"233",
+                                    "parentId":"244",
+                                    "treePath":"egs",
+                                    "permCode":"sdfsd",
+                                    "appId":"hhhsd",
+                                    "permName":"阅览",
+                                    "status":"on"},
+                                {
+                                    "permissionId":"274",
+                                    "parentId":"244",
+                                    "treePath":"egs",
+                                    "permCode":"sdfsd",
+                                    "appId":"dfgd",
+                                    "permName":"查看",
+                                    "status":"on"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "permissionId":"000",                         
+                    "parentId":"898",                      
+                    "treePath":"7878",                      
+                    "permCode":"ffggr",                       
+                    "appId":"788",                         
+                    "permName":"感应",                          
+                    "status":"on",                        
+                    "children":[                        
+                        {
+                            "permissionId":"099",
+                            "parentId":"000",
+                            "treePath":"effds",
+                            "permCode":"sdfsd",
+                            "appId":"dsfsd",
+                            "permName":"检查",
+                            "status":"on",
+                            "children":[{
+                                "permissionId":"034",
+                                "parentId":"099",
+                                "treePath":"egs",
+                                "permCode":"sdfsd",
+                                "appId":"dkkksd",
+                                "permName":"扫描",
+                                "status":"on"},
+                                {
+                                    "permissionId":"078",
+                                    "parentId":"099",
+                                    "treePath":"egs",
+                                    "permCode":"sdfsd",
+                                    "appId":"hhhsd",
+                                    "permName":"搜身",
+                                    "status":"on"},
+                                {
+                                    "permissionId":"037",
+                                    "parentId":"099",
+                                    "treePath":"egs",
+                                    "permCode":"sdfsd",
+                                    "appId":"dfgd",
+                                    "permName":"磁铁",
+                                    "status":"on"}
+                            ]
+                        }
+                    ]
+                }
+            ] 
+              
+        }
+    },
+    {"path":"/systemMan/role/queryRoleList.json",
+        "describe":"角色列表查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+                "pageSize":10,          
+                "pageNum":1,            
+                "rowTotal":100,         
+                "offset":0,             
+                "pageCount":10,         
+                "listRows":[
+                    {
+                        "roleId":"sferre",            
+                        "roleCode":"erree",          
+                        "roleName":"售后",          
+                        "roleDesc":"没有描述",          
+                        "createTime":"2019-9-4",        
+                        "createPerson":"老刘",      
+                        "updateTime":"2019-2-3",    
+                        "operator":"老王" ,
+                        "status":""  
+                    }
+                ]
+            }
+            }
+        
+    },
+
+    {"path":"/systemMan/role/exportRoleList.json",
+        "describe":"角色列表导出",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+            }
+        }
+    ,
+    
+
+    {"path":"/systemMan/role/insertRole.json",
+        "describe":"角色新增",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+            }
+        }
+    ,
+    {"path":"/systemMan/role/queryRolePermission.json",
+        "describe":"角色权限查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":[
+                {
+                    "permissionId":"989",                         
+                    "parentId":"898",                      
+                    "treePath":"7878",                      
+                    "permCode":"ffggr",                       
+                    "appId":"788",                         
+                    "permName":"目视",                          
+                    "status":"on",                        
+                    "children":[                        
+                        {
+                            "permissionId":"244",
+                            "parentId":"989",
+                            "treePath":"effds",
+                            "permCode":"sdfsd",
+                            "appId":"dsfsd",
+                            "permName":"视觉",
+                            "status":"on",
+                            "children":[{
+                                "permissionId":"254",
+                                "parentId":"244",
+                                "treePath":"egs",
+                                "permCode":"sdfsd",
+                                "appId":"dkkksd",
+                                "permName":"看",
+                                "status":"on"},
+                                {
+                                    "permissionId":"233",
+                                    "parentId":"244",
+                                    "treePath":"egs",
+                                    "permCode":"sdfsd",
+                                    "appId":"hhhsd",
+                                    "permName":"阅览",
+                                    "status":"on"},
+                                {
+                                    "permissionId":"274",
+                                    "parentId":"244",
+                                    "treePath":"egs",
+                                    "permCode":"sdfsd",
+                                    "appId":"dfgd",
+                                    "permName":"查看",
+                                    "status":"on"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "permissionId":"000",                         
+                    "parentId":"898",                      
+                    "treePath":"7878",                      
+                    "permCode":"ffggr",                       
+                    "appId":"788",                         
+                    "permName":"感应",                          
+                    "status":"on",                        
+                    "children":[                        
+                        {
+                            "permissionId":"099",
+                            "parentId":"000",
+                            "treePath":"effds",
+                            "permCode":"sdfsd",
+                            "appId":"dsfsd",
+                            "permName":"检查",
+                            "status":"on",
+                            "children":[{
+                                "permissionId":"034",
+                                "parentId":"099",
+                                "treePath":"egs",
+                                "permCode":"sdfsd",
+                                "appId":"dkkksd",
+                                "permName":"扫描",
+                                "status":"on"}
+                               
+                            ]
+                        }
+                    ]
+                }
+            ] 
+            }
+        }
+    ,
+    {"path":"/systemMan/role/updateRolePermission.json",
+        "describe":"角色权限修改",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+            }
+        }
+    ,
+    {"path":"/systemMan/role/deleteRole.json",
+        "describe":"角色删除",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+            }
+        },
+    {"path":"/systemMan/role/UpdateRole.json",
+        "describe":"角色修改",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+            }
+    },
+    {"path":"/shopCate/getShopCateTree.json",
+        "describe":"获取类别树",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data": [
+                {
+                    "catId": 1,
+                    "catName": "镜湖区",
+                    "parentId": "12",
+                    "level":1,
+                    "children": [
+
+                        {
+                            "level":2,
+                            "catId": 5,
+                            "catName": "镜二二区",
+                            "parentId": "12"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {"path":"/shopCate/add.json",
+        "describe":"门店分类新增",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+            }
+    },
+    {"path":"/shopCate/update.json",
+        "describe":"门店分类修改",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+            }
+    },
+    {"path":"/shopCate/delete.json",
+        "describe":"门店分类删除",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+        }
+    },
+    {"path":"/shopCate/getChildrenList.json",
+        "describe":"门店分类子类列表查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":[
+                {
+                    "catId":"34",
+                    "parentId":"we",
+                    "parentCatName":"ewwe",
+                    "catName":"wewe",
+                    "sortNo":4,
+                    "catStatus":"",
+                    "level":2 
+                },
+                {
+                    "catId":"324",
+                    "parentId":"we",
+                    "parentCatName":"ewwe",
+                    "catName":"wfffe",
+                    "sortNo":6,
+                    "catStatus":"",
+                    "level":2 
+                },
+                {
+                    "catId":"334",
+                    "parentId":"we",
+                    "parentCatName":"ewwe",
+                    "catName":"ggge",
+                    "sortNo":8,
+                    "catStatus":"",
+                    "level":2 
+                }
+            ]
+        }
+    },
+    {"path":"/shopCate/changeSort.json",
+        "describe":"修改门店类别排序",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+        }
+    },
+
+    {"path":"/bizArea/queryBizAreaList.json",
+        "describe":"地区下属商圈列表查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+                "pageNum": 1,
+                "pageSize": 1,
+                "rowTotal": 1,
+                "offset": 0,
+                "pageCount": 1,
+                "listRows": [
+                    {
+                        "districtId": 3,
+                        "districtName": "水游城",
+                        "areaId": 1,
+                        "status": "Y",
+                        "creator": "122",
+                        "createTime": 1574999581000,
+                        "updatePerson": "122",
+                        "lastUpdateTime": 1574999581000,
+                        "level":2
+                    }
+                ]
+            }
+        }
+    },
+    {"path":"/bizArea/BizAreaInsert.json",
+        "describe":"商圈新增",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+        }
+    },
+    {"path":"/bizArea/updateBizArea.json",
+        "describe":"商圈修改",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+        }
+    },
+    {"path":"/bizArea/deleteBizArea.json",
+        "describe":"商圈删除",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{ 
+            }
+        }
+    },
+    {"path":"/bizArea/getBizAreaInfo.json",
+        "describe":"商圈详细信息查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+                "districtId": 4,
+                "districtName": "世纪大道",
+                "areaId": 1,
+                "status": "Y",
+                "creator": "122",
+                "createTime": 1575256601000,
+                "updatePerson": "122",
+                "lastUpdateTime": 1575256601000
+            }
+        }
+    },
+    {"path":"/systemMan/user/addUser.json",
+        "describe":"账户新增",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+               
+            }
+        }
+    },
+    {"path":"/systemMan/user/queryUserList.json",
+        "describe":"账户列表查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+                "pageSize":10,          
+                "pageNum":1,            
+                "rowTotal":100,         
+                "offset":0,             
+                "pageCount":10,         
+                "listRows":[
+                    {
+                        "userId":"23",
+                        "userName":"dayelang",
+                        "loginId":"12swf",
+                        "password":"wwf",
+                        "roleId":"343",
+                        "phoneNo":"12432122126",
+                        "status":"ON",
+                        "createTime":"2019/1/3",
+                        "updateTime":"2019/4/5",
+                        "orgIds":"www,eee",               
+                        "orgNames":"元老会" ,            
+                        "roles":[{
+                            "roleId":"22w",            
+                            "roleCode":"wee",          
+                            "roleName":"大长老",          
+                            "roleDesc":"没什么可说的",          
+                            "status":"ON",			
+                            "createTime":"2232322",  
+                            "updateTime":"2232323",		
+                            "operator":"ffrffs",      	
+                            "perms":["wewew","wwwewe","wew"]
+                        }]
+                    }
+                ]
+            }
+        }
+    },
+    {"path":"/systemMan/user/exportUserList.json",
+        "describe":"账户列表导出",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+               
+            }
+        }
+    },
+    {"path":"/systemMan/user/queryUser.json",
+        "describe":"账户信息查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+                "userId":"2332",
+                "userName":"23",
+                "loginId":"22wwe",
+                "phoneNo":"wewew",
+                "userStatus":"fwwee",
+                "orgIds":"ewe,wwe",                
+                "roleIds":"wewew"			
+            }
+        }
+    },
+    {"path":"/systemMan/user/updateUser.json",
+        "describe":"账户信息修改",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+                	
+            }
+        }
+    },
+    {"path":"/systemMan/user/updateUserPassword.json",
+        "describe":"密码重置",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{	
+            }
+        }
+    },
+    {"path":"/systemMan/user/updateUserPassword.json",
+        "describe":"账户删除",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{	
+            }
+        }
+    },
+    {"path":"/systemMan/perm/queryChildPermsList.json",
+        "describe":"子菜单列表查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+                "pageSize":10,          
+                "pageNum":1,            
+                "rowTotal":100,         
+                "offset":0,             
+                "pageCount":10,         
+                "listRows":[
+                    {
+                        "permissionId":"hd",                   	
+                        "permName":"ereer",                      		
+                        "permCode":"errere",  							
+                        "parentId":"re",                      	
+                        "permType":"rere",                         	
+                        "permSeq":"rere",                          	
+                        "status":"erre",                        	
+                        "createTime":"re",						
+                        "updateTime":"rrerrerererere"							
+                    }
+                ]
+            }
+        }
+    },
+    {"path":"/systemMan/perm/addPerm.json",
+        "describe":"权限新增",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{	
+            }
+        }
+    },
+    {"path":"/systemMan/perm/updatePerm.json",
+        "describe":"编辑权限",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{	
+            }
+        }
+    },
+    {"path":"/systemMan/perm/queryPermInfo.json",
+        "describe":"权限信息查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+                "permissionId":"", 
+                "permName":"ewrwe",
+                "permCode":"wrewer", 					
+                "parentId":"erwr", 
+                "permType":"erwer", 
+                "permSeq":"4",
+                "status":"ON",                        	
+                "createTime":"2010-2-2",
+                "updateTime":"2019-2-2"	
+            }
+        }
+    },
+    {"path":"/systemMan/perm/deletePerm.json",
+        "describe":"删除权限",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+              
+            }
+        }
+    }
+
+]

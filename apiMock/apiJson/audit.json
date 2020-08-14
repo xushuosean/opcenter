@@ -1,0 +1,268 @@
+[
+    {
+        "path":"/merApply/merAddAuditList.json",
+        "describe":"商户进件审核列表",
+        "method":"get",
+        "result":{
+            "resultCode": "000000",
+            "message": "success",
+            "data":{
+                "dataCount":1002,
+                "list":[
+                    {   "applyId":"3",
+                        "merchantName":"金拱门（中国）有限公司",
+                        "merchantId":12345678,
+                        "firstAuditPerId":"无",
+                        "finalAuditPerId":"无",
+                        "auditState":"FIRSTAUDIT",
+                        "submitAuditTime":"2018/09/28 10:00",
+                        "incomingType":"FAST"    
+                    },
+                    {   
+                        "applyId":"3",
+                        "merchantName":"金拱门（中国）有限公司",
+                        "merchantId":12345678,
+                        "firstAuditPerId":"wqww",
+                        "finalAuditPerId":"eee",
+                        "auditState":"FINALAUDIT",
+                        "submitAuditTime":"2018/09/28 10:00",
+                        "incomingType":"NORMAL"
+                    }             
+                ]
+            }
+        }
+    }
+    ,
+    {
+        "path":"/audit/getUserAuditTasks.json",
+        "describe":"审核列表审核权限查询",
+        "method":"post",
+        "result":{
+            "resultCode": "000000",
+            "message": "success",
+            "data":["1","2","3","4"]
+        }
+    },
+    {
+        "path":"/merApply/merUpAuditList.json",
+        "describe":"商户变更审核列表查询",
+        "method":"get",
+        "result":{
+            "resultCode": "000000",
+            "message": "success",
+            "data":{
+                "pageSize": 5,
+                "pageNum": 1,
+                "rowTotal": 3,
+                "list": [
+                    {
+                        "applyId":"",
+                        "auditJnlNo": "57501",
+                        "merchantId": "10000000005",
+                        "merchantName": "邹氏国际集团",
+                        "firstAuditPerId": "1",
+                        "firstAuditPerName": null,
+                        "finalAuditPerId": "3",
+                        "finalAuditPerName": "是的哇",
+                        "auditState": "PASS",
+                        "submitAuditTime": "2011"
+                    },
+                    {
+                        "applyId":"",
+                        "auditJnlNo": "57558",
+                        "merchantId": "10000000007",
+                        "merchantName": "丁氏国际集团",
+                        "firstAuditPerId": "1",
+                        "firstAuditPerName": null,
+                        "finalAuditPerId": "2",
+                        "finalAuditPerName": null,
+                        "auditState": "PASS",
+                        "submitAuditTime":"2015/3/4"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "path":"/shopApply/category/getShopCateTree.json",
+        "describe":"门店类目列表查询",
+        "method":"get",
+        "result":{
+            "resultCode": "000000",
+            "message": "success",
+            "data":
+            [{
+                "catId":"334",               
+                "catName":"中餐",             
+                "parentId":"0" ,                
+                "children":[
+                    {
+                         "catId":"554",                
+                         "catName":"川菜",               
+                         "parentId":"334"       
+                    },
+                    {
+                        "catId":"884",                
+                        "catName":"东北菜",               
+                        "parentId":"334"       
+                   }
+                ]
+            },
+            {
+                "catId":"224",               
+                "catName":"西餐",             
+                "parentId":"0" ,                
+                "children":[
+                    {
+                         "catId":"114",                
+                         "catName":"法国菜",               
+                         "parentId":"224"       
+                    },
+                    {
+                        "catId":"444",                
+                        "catName":"意大利菜",               
+                        "parentId":"224"       
+                   }
+                ]
+            }
+        ]
+        }
+    },
+    {
+        "path":"/shopApply/shopAddAuditList.json",
+        "describe":"门店新增审核列表查询",
+        "method":"get",
+        "result":{
+            "resultCode": "000000",
+            "message": "success",
+            "data":
+            {
+                "pageSize": 5,
+                "pageNum": 1,
+                "rowTotal": 3,
+                "list": [
+                    {
+                        "applyId":"",
+                        "auditJnlNo": "37501",
+                        "shopId": "10000000003",
+                        "shopName": "王氏国际集团",
+                        "merchantId":"weewew",
+                        "merchantName":"weww",
+                        "firstCatId":"334",
+                        "secondCatId":"554",
+                        "firstAuditPerId": "1",
+                        "firstAuditPerName": "的撒旦",
+                        "finalAuditPerId": "搜索",
+                        "finalAuditPerName": null,
+                        "auditState": "PASS",
+                        "submitAuditTime": "2220/1/2"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "path":"/shopApply/shopUpdateAuditList.json",
+        "describe":"门店变更审核列表查询",
+        "method":"get",
+        "result":{
+            "resultCode": "000000",
+            "message": "success",
+            "data":
+            {
+                "pageSize": 5,
+                "pageNum": 1,
+                "rowTotal": 3,
+                "list": [
+                    {
+                        "applyId":"",
+                        "auditJnlNo": "37501",
+                        "shopId": "10000000003",
+                        "shopName": "王氏国际集团",
+                        "merchantId":"weewew",
+                        "merchantName":"weww",
+                        "firstCatId":"334",
+                        "secondCatId":"554",
+                        "firstAuditPerId": "1",
+                        "firstAuditPerName": "的撒旦",
+                        "finalAuditPerId": "打怪",
+                        "finalAuditPerName": "eeee",
+                        "auditState": "PASS",
+                        "submitAuditTime": "2220/1/2"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "path":"/audit/showAuditLog.json",
+        "describe":"审核日志查询",
+        "method":"get",
+        "result":{
+            "resultCode": "000000",
+            "message": "success",
+            "data":
+            {
+            }
+        }
+    },
+    {
+        "path":"/shopApply/shopStatusAuditList.json",
+        "describe":"门店关系变更审核列表",
+        "method":"get",
+        "result":{
+            "resultCode": "000000",
+            "message": "success",
+            "data":
+             {
+        "pageSize": 5,
+        "pageNum": 1,
+        "rowTotal": 3,
+        "list": [
+            {
+                "applyId":"2323",
+                "shopId":"233",
+                "shopName":"eww",
+                "merchantId":"wewe",
+                "merchantName":"weewr",
+                "firstAuditPerId":"ter",
+                "firstAuditPerName":"ere",
+                "finalAuditPerId":"dewe",
+                "finalAuditPerName":"wwwe",
+                "auditStatus":"PASS",
+                "submitAuditTime":"weeftrr"
+            }
+        ]
+        }
+    }},
+    {
+        "path":"/merApply/getMerReAuditList.json",
+        "describe":"商户关系变更审核列表",
+        "method":"get",
+        "result":{
+            "resultCode": "000000",
+            "message": "success",
+            "data":{
+                "pageSize": 5,
+                "pageNum": 1,
+                "rowTotal": 3,
+                "list": [
+                    {
+                        "applyId":"233",
+                        "shopId":"wewe",
+                        "merchantId":"wewer",
+                        "merchantName":"sdgfsdfsfd",
+                        "addCount":"3",      
+                        "delCount":"5",    
+                        "firstAuditPerId":"1323",
+                        "firstAuditPerName":"rfdde3",
+                        "finalAuditPerId":"233werer",
+                        "finalAuditPerName":"wefdsss",
+                        "auditStatus":"PASS",
+                        "submitAuditTime":"2012/2/3"
+                    }
+                ]
+            }
+   
+    }}
+]

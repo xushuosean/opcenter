@@ -1,0 +1,595 @@
+[
+	{
+		"path": "/merApply/saveMerBaseInfo.json",
+		"describe": "商户入驻/商户基本信息保存",
+		"method": "post",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {
+				"merchantId":"10000000008",
+				"applyId":"18"
+			}
+		}
+	},
+	{
+		"path": "/merApply/updateMerBase.json",
+		"describe": "商户入驻/商户基本信息修改",
+		"method": "post",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {}
+		}
+	},
+	{
+		"path": "/merApply/getMerApplyInfo.json",
+		"describe": "商户入驻/商户信息查询-通用接口",
+		"method": "get",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {
+				"merchantId":"0000001",
+				"parentMerchantId":"000001",
+				"merchantName":"老乡鸡",
+				"provinceId":"1221",
+				"cityId":"1231",
+				"areaId":"12122",
+				"detailAddr":"浦东新区详科路",
+				"merchantStatus":"NORMAL",
+				"incomingType":"NORMAL",
+				"merchantType":"NORMAL",
+				"coopType":"NORMAL",
+				"juriPersonName":"王小二",
+				"juriPersonCertType":"",
+				"juriPersonCertNo":"",
+				"contactName":"王二小",
+				"contactPhone":"18702532168",
+				"bussLicenseType":"",
+				"unifSocialCreditCode":"",
+				"licenseNo":"",
+				"licenseRegistNo":"",
+				"licenseStartDate":"2019-12-12",
+				"licenseEndDate":"2019-12-12",
+				"orgCode":"1212",
+				"taxRegsitNo":"1221",
+				"bizClassesId":"121",
+				"firstOrgId":"212",
+				"secondOrgId":"1212",
+				"thirdOrgId":"2122",
+				"contractStartDate":"1212",
+				"contractEndDate":"1212",
+				"clerkNo":"1212",
+				"remark":"1212",
+				"acctNo":"1212",
+				"acctType":"121",
+				"acctName":"122",
+				"bankId":"121",
+				"openNetworkId":"21212",
+				"isSignOnlinePay":true,
+				"onlineCommisRate":0.0001,
+				"perTransLimit":12.00,
+				"dailyTransLimit":21.00,
+				"isSignCoupon":true,
+				"isPrincipalPay":true,
+				"cashCommisRate":"0.2",
+				"isIntegralExchange":"0",
+				"annexList":[
+					{
+						"annexId":"",
+						"applyId":"",
+						"annexType":"BIZ_LICENSE",
+						"annexUrls":"/img/1571295630929.png,/img/1571297065033.png"
+					},
+					{
+						"annexId":"",
+						"applyId":"",
+						"annexType":"ID_CARD",
+						"annexUrls":"/img/1571295630929.png,/img/1571297065033.png"
+					},
+					{
+						"annexId":"",
+						"applyId":"",
+						"annexType":"CPA",
+						"annexUrls":"/img/1571295630929.png,/img/1571297065033.png"
+					},
+					{
+						"annexId":"",
+						"applyId":"",
+						"annexType":"FOOD_CERT",
+						"annexUrls":"/img/1571295630929.png,/img/1571297065033.png"
+					},
+					{
+						"annexId":"",
+						"applyId":"",
+						"annexType":"OTHER",
+						"annexUrls":"/img/1571295630929.png,/img/1571297065033.png"
+					}
+				]
+			}
+		}
+	},
+	{
+		"path": "/merApply/saveOrUpdateMerSettleInfo.json",
+		"describe": "商户入驻/商户结算信息保存",
+		"method": "post",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {}
+		}
+	},
+	{
+		"path": "/merApply/saveOrUpdateMerAgreeMtInfo.json",
+		"describe": "商户入驻/商户签约交易类型保存",
+		"method": "post",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {}
+		}
+	},
+	{
+		"path": "/merApply/getMerList.json",
+		"describe": "商户列表查询",
+		"method": "post",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {
+				"rowTotal":10,
+				"merInfoList":[
+					{
+						"merchantName":"老乡鸡连锁店",
+						"applyId":"000001",
+						"merchantId":"000002",
+						"merchantStatus":"FREEZE"
+					},
+					{
+						"merchantName":"老乡鸡连锁店",
+						"applyId":"000001",
+						"merchantId":"000002",
+						"merchantStatus":"EXPIRE"
+					},
+					{
+						"merchantName":"老乡鸡连锁店",
+						"applyId":"000001",
+						"merchantId":"000002",
+						"merchantStatus":"NORMAL"
+					}
+				]
+			}
+		}
+	},
+	{
+		"path": "/merApply/merByCondition.json",
+		"describe": "根据商户名称或商户编号查询商户",
+		"method": "get",
+		"result": {
+			"success": true,
+			"resultCode": "000000",
+			"resultMsg": "SUCCESS",
+			"data":[
+				{                            
+					"merchantId":"000002",                               
+					"merchantName":"达利园"                                         
+				},
+				{                             
+					"merchantId":"000003",                               
+					"merchantName":"洁柔"                                      
+				},
+				{                               
+					"merchantId":"000004",                               
+					"merchantName":"麦当劳"             
+				}
+			]
+		}
+	},
+	{
+		"path": "/shopApply/shopInfoByCondition.json",
+		"describe": "根据商户名称或商户编号查询商户",
+		"method": "get",
+		"result": {
+			"success": true,
+			"resultCode": "000000",
+			"resultMsg": "SUCCESS",
+			"data":[
+				{                            
+					"shopId":"000002",                               
+					"shopName":"达利园"                                         
+				},
+				{                             
+					"shopId":"000003",                               
+					"shopName":"洁柔"                                      
+				},
+				{                               
+					"shopId":"000004",                               
+					"shopName":"麦当劳"             
+				}
+			]
+		}
+	},
+	{
+		"path": "/merApply/merFormalInfo.json",
+		"describe": "商户详情查询",
+		"method": "get",
+		"result": {
+			"success": true,
+			"resultCode": "000000",
+			"resultMsg": "SUCCESS",
+			"data": {
+				"merchantId":"0000001",
+				"parentMerchantId":"000001",
+				"merchantName":"老乡鸡",
+				"provinceId":"1221",
+				"cityId":"1231",
+				"areaId":"12122",
+				"detailAddr":"浦东新区详科路",
+				"merchantStatus":"NORMAL",
+				"incomingType":"NORMAL",
+				"merchantType":"NORMAL",
+				"coopType":"NORMAL",
+				"juriPersonName":"王小二",
+				"juriPersonCertType":"",
+				"juriPersonCertNo":"",
+				"contactName":"王二小",
+				"contactPhone":"18702532168",
+				"bussLicenseType":"",
+				"unifSocialCreditCode":"",
+				"licenseNo":"",
+				"licenseRegistNo":"",
+				"licenseStartDate":"2019-12-12",
+				"licenseEndDate":"2019-12-12",
+				"orgCode":"1212",
+				"taxRegsitNo":"1221",
+				"bizClassesId":"121",
+				"firstOrgId":"1141123",
+				"secondOrgId":"124123123",
+				"thirdOrgId":"0",
+				"contractStartDate":"1212",
+				"contractEndDate":"1212",
+				"clerkNo":"1212",
+				"remark":"1212",
+				"acctNo":"1212",
+				"acctType":"121",
+				"acctName":"122",
+				"bankId":"121",
+				"openNetworkId":"21212",
+				"isSignOnlinePay":true,
+				"onlineCommisRate":0.0001,
+				"perTransLimit":12.00,
+				"dailyTransLimit":21.00,
+				"isSignCoupon":true,
+				"isPrincipalPay":true,
+				"cashCommisRate":"0.2",
+				"isIntegralExchange":"0",
+				"annexList":[
+					{
+						"annexId":"",
+						"applyId":"",
+						"annexType":"BIZ_LICENSE",
+						"annexUrls":"/img/1571295630929.png,/img/1571297065033.png"
+					},
+					{
+						"annexId":"",
+						"applyId":"",
+						"annexType":"ID_CARD",
+						"annexUrls":"/img/1571295630929.png,/img/1571297065033.png"
+					},
+					{
+						"annexId":"",
+						"applyId":"",
+						"annexType":"CPA",
+						"annexUrls":"/img/1571295630929.png,/img/1571297065033.png"
+					},
+					{
+						"annexId":"",
+						"applyId":"",
+						"annexType":"FOOD_CERT",
+						"annexUrls":"/img/1571295630929.png,/img/1571297065033.png"
+					},
+					{
+						"annexId":"",
+						"applyId":"",
+						"annexType":"OTHER",
+						"annexUrls":"/img/1571295630929.png,/img/1571297065033.png"
+					}
+				]
+			}
+		}
+	},
+	{
+		"path": "/merApply/mershopList.json",
+		"describe": "商户详情下下属门店查询",
+		"method": "get",
+		"result": {
+			"success": true,
+			"resultCode": "000000",
+			"resultMsg": "SUCCESS",
+			"data": {
+				"shopList":[
+					{
+						"shopId":"00002101",
+						"shopName":"门店名称",
+						"areaStr":"门店地址",
+						"shopStatus":"NORMAL",
+						"createTime":"2019-12-12"
+					}
+				]	
+			}
+		}
+	},
+	{
+		"path": "/merApply/merRelationTree.json",
+		"describe": "商户关联关系查询",
+		"method": "get",
+		"result": {
+			"success": true,
+			"resultCode": "000000",
+			"resultMsg": "SUCCESS",
+			"data": {
+				"merchantId": "1001",
+				"merchantName": "玉珠",
+				"parentId": "0",
+				"children": [
+					{
+						"merchantId": "10000000001",
+						"merchantName": "岩旭国际集团",
+						"parentId": "1001",
+						"children": [
+							{
+								"merchantId": "10000000002",
+								"merchantName": "杨氏国际集团",
+								"parentId": "10000000001",
+								"children": null
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	{
+		"path": "/merApply/merRelateAndSubAudit.json",
+		"describe": "商户下属关系变更提交审核接口",
+		"method": "post",
+		"result": {
+			"success": true,
+			"resultCode": "000000",
+			"resultMsg": "SUCCESS",
+			"data": {}
+		}
+	},
+	{
+		"path": "/bizArea/queryBizAreaList.json",
+		"describe": "商户入驻/查询商圈",
+		"method": "get",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {}
+		}
+	},
+	{
+		"path": "/shopApply/saveShopApply.json",
+		"describe": "商户入驻/新增商户门店",
+		"method": "post",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {}
+		}
+	},
+	{
+		"path": "/shopApply/updateShopApply.json",
+		"describe": "商户入驻/商户下属门店修改",
+		"method": "post",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {}
+		}
+	},
+	{
+		"path": "/systemMan/shop/deleteShop",
+		"describe": "商户入驻/商户下属门店删除",
+		"method": "post",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {}
+		}
+	},
+	{
+		"path": "/audit/auditSubmit.json",
+		"describe": "商户入驻/商户审核信息保存",
+		"method": "post",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {}
+		}
+	},
+	{
+		"path": "/merApply/org/orgTree.json",
+		"describe": "商户入驻/机构树查询",
+		"method": "get",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": [
+				{
+					"orgId":"1141123",                     
+					"orgName":"安徽省",                  
+					"code":"300000",                 
+					"children":[{                            
+						"orgId":"124123123",               
+						"parentId":"114112223",              
+						"orgName":"合肥市",                 
+						"code":"234465",                
+						"siteStatus":"",                    
+						"isHaveSite":true      
+					}]
+				}
+			]
+		}
+	},
+	{
+		"path": "/shopApply/category/getShopCateTree.json",
+		"describe": "商户入驻/门店分类查询",
+		"method": "get",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": []
+		}
+	},
+	{
+		"path": "/merApply/bizClassList.json",
+		"describe": "商户入驻/商户经营类别查询",
+		"method": "get",
+		"result": {
+			"success":true,
+			"resultCode": "000000",
+			"resultMessage": "success",
+			"data": {}
+		}
+	},
+	{
+		"path": "/shopApply/queryShopList.json",
+		"describe": "门店列表查询",
+		"method": "get",
+		"result": {
+			"success":"",
+			"resultCode":"000000",
+			"resultMsg":"",
+			"data":{
+				"pageNum":1,
+				"pageSize":5,
+				"rowTotal":12,
+				"shopList":[
+					{
+						"shopId":"000001",
+						"shopName":"老乡鸡",
+						"merchantId":"1000101001",
+						"merchantName":"老乡鸡连锁店",
+						"provinceId":"100011",
+						"cityId":"11212",
+						"areaId":"12122",
+						"addrStr":"12212",  
+						"catrStr":"快餐",          
+						"orgStr":"2222",          
+						"clerkNo":"222",
+						"shopStatus":"EXPIRE",
+						"createTime":"2222"
+					}
+				]
+			}
+		}
+	},
+	{
+		"path": "/shopApply/getShopInfo.json",
+		"describe": "门店详情查询",
+		"method": "get",
+		"result": {
+			"success":"",
+			"resultCode":"000000",
+			"resultMsg":"",
+			"data":{
+				"applyId":"11111",
+				"shopId":"22122",
+				"merchantId":"12121212",
+				"shopName":"门店名称",
+				"shopStatus":"NORMAL",
+				"shopLogoPath":"/img/1.png",
+				"firstCatId":"10001",
+				"secondCatId":"12211",
+				"provinceId":"1122",
+				"cityId":"111",
+				"areaId":"111",
+				"detailAddr":"上海市浦东新区详科路99号",
+				"bizAreaId":"11221",
+				"bussinessWeeks":"10010021",
+				"bussiStartTime":"2019012102",
+				"bussiEndTime":"121212",
+				"shopServicePhone":"18702532168",
+				"isSyncConName":"0",
+				"shopContactName":"十点多",
+				"isSyncConTel":"0",
+				"shopContactTel":"滚滚滚",
+				"shopManagerLoginNum":"沟通过",
+				"isSyncMechtSettle":"他",
+				"isManyCpnVerify":"给他",
+				"acctNo":"给他",
+				"acctType":"给他",
+				"acctName":"广告图",
+				"bankId":"不用",
+				"openNetworkId":"有好有坏"
+		
+			}
+		}
+	},
+	{
+		"path": "/shopApply/shopStatusUp.json",
+		"describe": "门店状态变更与提交审核",
+		"method": "post",
+		"result": {
+			"success":"",
+			"resultCode":"000000",
+			"resultMsg":"",
+			"data":{
+			}
+		}
+	},
+	{
+		"path": "/site/region.json",
+		"describe": "省市区查询",
+		"method": "get",
+		"result": {
+			"success":"",
+			"resultCode":"000000",
+			"resultMsg":"",
+			"data":{
+			}
+		}
+	},
+	{
+		"path": "/merApply/site/openSiteTree.json",
+		"describe": "站点树查询",
+		"method": "get",
+		"result": {
+			"success":"",
+			"resultCode":"000000",
+			"resultMsg":"",
+			"data":[
+				{
+					"id":"1141123",                     
+					"name":"安徽省",                  
+					"code":"300000",                 
+					"children":[{                            
+						"id":"124123123",               
+						"parentId":"1141123",              
+						"name":"合肥市",                 
+						"code":"234465",                
+						"siteStatus":"",                    
+						"isHaveSite":true      
+					}]
+				}
+			]
+		}
+	}
+]

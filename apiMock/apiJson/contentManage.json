@@ -1,0 +1,124 @@
+[
+	{
+		"path":"/content/pageStru/getDetail.json",
+		"describe": "用户端结构信息查询",
+		"method": "get",
+    "result": {
+      "success":"",         
+      "resultCode":"000000",     
+      "resultMsg": "",    
+      "data": {             
+      "id":"",       
+      "firstSiteId":"",   
+      "secondSiteId":"",  
+      "thirdSiteId":"",   
+      "pageType":"",    
+      "structureJson":{
+        "structrue":[
+          {
+            "component": "indexBanner",
+            "uuid": "4ff9fe50-7747-4396-bb1f-f9d89b619e56"
+          },
+          {
+            "component": "indexSearch",
+            "uuid": "b2dae416-ad02-47e3-b09f-c3f2b652551d"
+          },
+          {
+            "component": "indexEmptyList",
+            "uuid": "d7ca71bb-48f0-412d-ad29-b0c01a5ba37c",
+            "child": [
+              {
+                "component": "indexListItem",
+                "uuid": "5d3a9b13-f379-4891-afe6-a0605da11d42",
+                "props": {
+                  "title": "优惠券"
+                }
+              },
+              {
+                "component": "indexListItem",
+                "uuid": "3fcd7121-27ef-40a2-b926-fe096880d396",
+                "props": {
+                  "title": "优惠商家"
+                }
+              },
+              {
+                "component": "indexListItem",
+                "uuid": "ee31a981-24ca-4373-a4b7-68133c0152f5",
+                "props": {
+                  "title": "我的订单"
+                }
+              },
+              {
+                "component": "indexListItem",
+                "uuid": "c66faf2c-cd64-4c3b-a0f7-7a89491ca54e",
+                "props": {
+                  "title": "我的收藏"
+                }
+              }
+            ]
+          },
+          {
+            "component": "indexEmptyBetween",
+            "uuid": "520ec9a1-4172-4dd9-a200-169118293eee",
+            "child": [
+              {
+                "component": "indexCouponEntry",
+                "uuid": "6ef65e31-bdc2-4a68-bf44-dcef11b229a2"
+              },
+              {
+                "component": "indexCouponEntry",
+                "uuid": "d4a5aae9-14e4-49e9-94fd-043e6cf02642"
+              }
+            ]
+          },
+          {
+            "component": "indexActivityEntry",
+            "uuid": "fa0d2aa9-7000-4e6b-aae8-d12b0f4a3a61"
+          },
+          {
+            "component": "indexActivityEntry",
+            "uuid": "f7f28ac9-7cbd-4e2b-bac5-28b185c701f8"
+          },
+          {
+            "component": "indexLookMore",
+            "uuid": "266c925d-bb02-4dc6-a736-78ccbf5ed3a7"
+          },
+          {
+            "component": "indexRecommendBox",
+            "uuid": "fa7aa809-aadb-437e-afe7-00233962b892",
+            "child": [
+              {
+                "component": "indexCouponItem",
+                "uuid": "d16b40fc-f215-4868-afbf-5378bb9c0446"
+              },
+              {
+                "component": "indexCouponItem",
+                "uuid": "783addd5-92fa-43f9-b907-5292b0ede84f"
+              },
+              {
+                "component": "indexCouponItem",
+                "uuid": "ee018414-298f-42a9-a480-03ee214a2b95"
+              }
+            ]
+            }
+          ]}
+        }
+      }	
+  },
+  {
+    "path":"/content/page/getPageContent.json",
+    "describe": "模板页面框架",
+    "method": "get",
+    "result": {"success":true,"resultCode":"000000","resultMsg":null,"data":{"pageContentJson":{"structrue":[{"component":"indexBanner","uuid":"4ff9fe50-7747-4396-bb1f-f9d89b619e56"},{"component":"indexSearch","uuid":"b2dae416-ad02-47e3-b09f-c3f2b652551d"},{"component":"indexEmptyList","uuid":"d7ca71bb-48f0-412d-ad29-b0c01a5ba37c","child":[{"component":"indexListItem","uuid":"5d3a9b13-f379-4891-afe6-a0605da11d42","props":{"src":"https://file.test.cibfintech.com/null","linkType":"","href":"","shopId":"","shopType":"","title":"优惠券","couponId":""}},{"component":"indexListItem","uuid":"3fcd7121-27ef-40a2-b926-fe096880d396","props":{"src":"https://file.test.cibfintech.com/group1/M00/B5/3F/CmAFGV4DJlKAS-7vAAvqH_kipG8069.jpg","linkType":"url","href":"","shopId":"","shopType":"","title":"优惠商家","couponId":""}},{"component":"indexListItem","uuid":"ee31a981-24ca-4373-a4b7-68133c0152f5","props":{"src":"https://file.test.cibfintech.com/group1/M00/B5/52/CmAFGV4DUzaAbAy3AAiQfKHDaaQ796.jpg","linkType":"specifiedShopList","href":"","shopId":"","shopType":["fffff","vvvvv"],"title":"我的订单","couponId":""}},{"component":"indexListItem","uuid":"c66faf2c-cd64-4c3b-a0f7-7a89491ca54e","props":{"src":"https://file.test.cibfintech.com/group1/M00/B5/52/CmAFGV4DU9mAYiVnAABQ9imNnzM679.jpg","linkType":"","href":"","shopId":"","shopType":"","title":"我的收藏","couponId":""}}]},{"component":"indexEmptyBetween","uuid":"520ec9a1-4172-4dd9-a200-169118293eee","child":[{"component":"indexCouponEntry","uuid":"6ef65e31-bdc2-4a68-bf44-dcef11b229a2","props":{"src":"https://file.test.cibfintech.com/group1/M00/B5/3D/CmAFGV4DIVOAE_ejAAzodQCbVVc801.jpg","linkType":"","href":"","shopId":"","shopType":"","couponId":""}},{"component":"indexCouponEntry","uuid":"d4a5aae9-14e4-49e9-94fd-043e6cf02642","props":{"src":"https://file.test.cibfintech.com/group1/M00/B5/52/CmAFGV4DVSqAUcVhAABkD_cjPss612.png","linkType":"url","href":"https://ccpay.test.cib.com.cn/commerce/index.html#/aggregation/11111","shopId":"","shopType":["xxxx","xxxxxxx"],"couponId":""}}]},{"component":"indexActivityEntry","uuid":"fa0d2aa9-7000-4e6b-aae8-d12b0f4a3a61"},{"component":"indexActivityEntry","uuid":"f7f28ac9-7cbd-4e2b-bac5-28b185c701f8"},{"component":"indexLookMore","uuid":"266c925d-bb02-4dc6-a736-78ccbf5ed3a7"},{"component":"indexRecommendBox","uuid":"fa7aa809-aadb-437e-afe7-00233962b892","child":[{"component":"indexCouponItem","uuid":"d16b40fc-f215-4868-afbf-5378bb9c0446"},{"component":"indexCouponItem","uuid":"783addd5-92fa-43f9-b907-5292b0ede84f"},{"component":"indexCouponItem","uuid":"ee018414-298f-42a9-a480-03ee214a2b95"}],"props":{"couponIds":[{"value":"16"}],"sourceType":"BY_COUPON_IDS","num":1}}]}}}
+  },
+  {
+    "path":"/content/pageData/save.json",
+    "describe":"用户端页面组件信息保存",
+    "method":"post",
+    "result":{
+        "success":"",
+        "resultCode":"000000",
+        "resultMsg":""
+    }
+  }
+]

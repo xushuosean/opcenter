@@ -1,0 +1,358 @@
+[
+    {
+		"path":"/searchManage/dict/createDict",
+		"describe": "新增分词",
+		"method": "post",
+		"result": {
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":null
+        }
+    },
+    {
+		"path":"/searchManage/dict/updateDict",
+		"describe": "修改分词",
+		"method": "post",
+		"result": {
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":null
+        }
+    },
+    {
+		"path":"/searchManage/dict/delDict/:id",
+		"describe": "删除分词",
+		"method": "delete",
+		"result": {
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":null
+        }
+    },
+    {
+		"path":"/searchManage/dict/getDictList",
+		"describe": "查询分词列表",
+		"method": "get",
+		"result": {
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+                "pageNum":1,
+                "pageSize":10,   
+                "rowTotal":200, 
+                "offset":0,      
+                "pageCount":20,  
+                "listRows":[
+                    {
+                        "id":1,
+                        "word":"海底捞"
+                    }
+                ]
+            }
+        }
+    },
+    {
+		"path":"/searchManage/searchHistory/getSearchHistoryList",
+		"describe": "查询用户搜索历史",
+		"method": "get",
+        "result": 
+        {
+            "success":"true",
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{
+                "pageNum":1,
+                "pageSize":10,   
+                "rowTotal":200, 
+                "offset":0,      
+                "pageCount":20,  
+                "listRows":[
+                    {
+                        "id":1,
+                        "userId":"00001", 
+                        "searchContent":"海底捞",
+                        "searchSceneType":"o2o", 
+                        "isExistResult":true, 
+                        "createTime":"2019-01-01 10:00:00" 
+                    }
+                ]
+            }
+        }
+    },
+    {
+		"path":"/searchManage/synonym/createSynonym",
+		"describe": "新增同义词",
+		"method": "post",
+		"result": {     
+                "success":"",
+                "resultCode":"000000",
+                "resultMsg":"",
+                "data":null
+        }
+    },
+    {
+		"path":"/searchManage/synonym/delSynonym/:id",
+		"describe": "删除同义词",
+		"method": "delete",
+		"result": {
+                "success":"",
+                "resultCode":"000000",
+                "resultMsg":"",
+                "data":null
+        }
+    },
+    {
+		"path":"/searchManage/synonym/updateSynonym",
+		"describe": "修改同义词",
+		"method": "post",
+		"result": {
+                "success":"",
+                "resultCode":"000000",
+                "resultMsg":"",
+                "data":null
+        }
+    },
+    {
+		"path":"/searchManage/synonym/getSynonymInfo/:id",
+		"describe": "查询同义词详情",
+		"method": "get",
+		"result": {
+            "success":"",
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{
+                "id":1,             
+                "original":"番茄",   
+                "synonym":"西红柿"   
+            }
+        }
+    },
+    {
+		"path":"/searchManage/synonym/getSynonymList",
+		"describe": "分页查询索同义词列表",
+		"method": "get",
+		"result": {
+            "success":"",
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{
+                "pageNum":1,
+                "pageSize":10,   
+                "rowTotal":200, 
+                "offset":0,      
+                "pageCount":20,  
+                "listRows":[
+                    {
+                        "id":1,
+                        "original":"番茄", 
+                        "synonym":"西红柿" 
+                    }
+                ]
+            }
+        }
+    },
+     
+    {
+		"path":"/searchManage/template/getSearchTemplateList",
+		"describe": "分页查询搜索模板列表",
+		"method": "get",
+		"result":{
+            "success":"",
+            "resultCode":"000000",
+            "resultMsg":"",
+            "data":{
+                "pageNum":1,
+                "pageSize":10,   
+                "rowTotal":200, 
+                "offset":0,      
+                "pageCount":20,  
+                "listRows":[
+                    {
+                        "templateId":1344,
+                        "templateCode":"00001",
+                        "indexName":"product_index", 
+                        "templateContent":"xxxxxxxxxxx"
+                    },
+                    {
+                        "templateId":3452,
+                        "templateCode":"dsdf3",
+                        "indexName":"product_indexewew", 
+                        "templateContent":"xxxrxxxxx"
+                    }
+                ]
+            }
+        }
+    },
+    {
+		"path":"/searchManage/template/createSearchTemplate",
+		"describe": "新增搜索模板",
+		"method": "post",
+		"result": {
+                "success":"",
+                "resultCode":"000000",
+                "resultMsg":"",
+                "data":null
+        }
+    },
+    {
+		"path":"/searchManage/template/getSearchTemplateInfo/:id",
+		"describe": "根据ID查询搜索模板详情",
+		"method": "get",
+		"result": {
+                "success":"",
+                "resultCode":"000000",
+                "resultMsg":"",
+                "data":{
+                    "templateId":143,
+                    "templateCode":"00001",
+                    "indexName":"product_index",
+                    "templateContent":"xxxxxxxxxxx" 
+                }
+        }
+    },
+    {
+		"path":"/searchManage/template/selectTemplateByCode/:code",
+		"describe": "根据模板代码查询搜索模板详情",
+		"method": "get",
+		"result": {
+                "success":"",
+                "resultCode":"000000",
+                "resultMsg":"",
+                "data":{
+                    "templateId":443,
+                    "templateCode":"000e1",
+                    "indexName":"product_index",
+                    "templateContent":"xxxxxxxxxxx" 
+                }
+        }
+    },
+    {
+		"path":"/searchManage/template/updateSearchTemplate",
+		"describe": "修改搜索模板",
+		"method": "post",
+		"result": {
+                "success":"",
+                "resultCode":"000000",
+                "resultMsg":"",
+                "data":null
+        }
+    },
+    {
+		"path":"/searchManage/template/delSearchTemplate/:id",
+		"describe": "删除搜索模板",
+		"method": "delete",
+		"result": {
+                "success":"",
+                "resultCode":"000000",
+                "resultMsg":"",
+                "data":null
+        }
+    },
+    
+    {"path":"/searchManage/hotSearch/getHotSearchList",
+        "describe":"分页热搜查询",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+                "pageNum":1,
+                "pageSize":10,
+                "rowTotal":200,
+                "offset":0,
+                "pageCount":20,  
+                "listRows":[
+                    {
+                        "id":1,
+                        "searchSceneType":"o2o",
+                        "cityCode":"beijing",
+                        "hotTerm":"海底捞",
+                        "seq":2
+                    },
+                    {
+                        "id":2,
+                        "searchSceneType":"o2o",
+                        "cityCode":"shanghai",
+                        "hotTerm":"火锅",
+                        "seq":3
+                    },
+                    {
+                        "id":5,
+                        "searchSceneType":"o2o",
+                        "cityCode":"sichuan",
+                        "hotTerm":"麻辣烫",
+                        "seq":4
+                    } ,
+                    {
+                        "id":11,
+                        "searchSceneType":"o2o",
+                        "cityCode":"hunan",
+                        "hotTerm":"咖喱",
+                        "seq":5
+                    }
+                ]
+            }
+        }
+    },
+    {"path":"/searchManage/hotSearch/createHotSearch",
+        "describe":"新增热门搜索词",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":null
+        }
+    },
+    {"path":"/searchManage/hotSearch/delHotSearch/:id",
+        "describe":"删除热门搜索词",
+        "method":"delete",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":null
+        }
+    },
+    {"path":"/searchManage/hotSearch/updateHotSearch",
+        "describe":"修改热门搜索词",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":null
+        }
+    },
+    {"path":"/searchManage/hotSearch/getHotSearchInfo/:id",
+        "describe":"查询热门搜索词详情",
+        "method":"get",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":{
+                "id":1,
+                "searchSceneType":"o2o",
+                "cityCode":"shanghai",
+                "hotTerm":"海底捞",
+                "seq":2
+            }
+        }
+    },
+    {"path":"/searchManage/hotSearch/adjustSeq",
+        "describe":"热门搜索词排序调整",
+        "method":"post",
+        "result":{
+            "success":true,
+            "resultCode":"000000",
+            "returnMsg": "",
+            "data":null
+        }
+    }
+]
